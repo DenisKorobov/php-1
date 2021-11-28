@@ -107,3 +107,14 @@ echo mathOperation(4, 8, "/");
 echo "<br><br>";
 
 /* Task №6 */
+
+function power($val, $pow) {
+
+    if ($pow > 0) {
+        return $val * power($val, $pow - 1);
+    }
+    return 1;
+
+}
+
+echo power(3, 4);
